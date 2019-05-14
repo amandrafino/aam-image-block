@@ -1,0 +1,70 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+html,
+body {
+  max-width: calc(100vw - 2rem);
+  height: 100%;
+  margin: auto;
+}
+
+h1 {
+  margin: 3rem;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(14.63rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(14.63rem, 1fr));
+  grid-gap: 1rem;
+  cursor: pointer;
+}
+
+main .card img {
+  opacity: .5;
+}
+
+main .card img:hover {
+  opacity: 1;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+main .card:nth-of-type(1) {
+  background: #e6e2e2;
+}
+
+main .card:nth-of-type(2) {
+  background: #d2cece;
+}
+
+main .card:nth-of-type(3) {
+  background: #e6e2e2;
+}
+
+main .card:nth-of-type(4) {
+  background: #d0bfbf;
+}
+
+main .card:nth-of-type(5) {
+  background: #e6e2e2;
+}
+
+main .card:nth-of-type(6) {
+  background: #aba4a4;
+}
+
+main .info {
+  padding: 1.25rem;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,58 @@
+@import '_mixins';
+
+$colors: rgb(230, 226, 226),
+rgb(210, 206, 206),
+rgb(230, 226, 226),
+rgb(208, 191, 191),
+rgb(230, 226, 226),
+rgb(171, 164, 164);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+html,
+body {
+  max-width: calc(100vw - 2rem);
+  height: 100%;
+  margin: auto;
+}
+
+h1 {
+  margin: 3rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14.63rem, 1fr));
+  grid-gap: 1rem;
+  cursor: pointer;
+
+  & .card {
+    img {
+      opacity: .5;
+
+      &:hover {
+        opacity: 1;
+        transition: all 1s ease-in-out;
+      }
+    }
+
+    @for $i from 1 through 6 {
+      &:nth-of-type(#{$i}) {
+        background: nth($colors, $i);
+      }
+    }
+  }
+
+  & .info {
+    padding: 1.25rem;
+  }
+}

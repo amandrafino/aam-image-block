@@ -1,0 +1,1 @@
+Pretty good cssgrid template for block of images. Using auto-fit and fr units to do the magic.  A bit of transitions as well.
